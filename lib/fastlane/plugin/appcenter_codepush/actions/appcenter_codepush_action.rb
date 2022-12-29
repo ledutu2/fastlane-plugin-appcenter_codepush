@@ -6,8 +6,8 @@ module Fastlane
     class AppcenterCodepushAction < Action
       def self.run(params)
         UI.message("The appcenter_codepush plugin is working!")
-
-        sh "cd .. && code-push release-react #{params[:owner_name]}/#{params[:my_app]} #{params[:platform]} -d #{params[:env]}"
+        sh $pwd
+        # sh "cd .. && code-push release-react #{params[:owner_name]}/#{params[:my_app]} #{params[:platform]} -d #{params[:env]}"
       end
 
       def self.description
