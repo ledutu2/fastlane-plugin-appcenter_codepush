@@ -10,6 +10,17 @@ This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To 
 fastlane add_plugin appcenter_codepush
 ```
 
+## Example
+Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running fastlane install_plugins and bundle exec fastlane test.
+````ruby 
+appcenter_codepush(
+      env: 'ENVIRONMENT',
+      owner_name: 'OWNER_NAME'
+      my_app: 'MY_APP',
+      platform: 'PLATFORM'
+    )
+````
+
 ## About appcenter_codepush
 
 Plugin for codepush to appcenter

@@ -1,3 +1,8 @@
 lane :test do
-  appcenter_codepush
+  appcenter_codepush(
+    env: 'staging',
+    owner_name: 'Saigontechnology',
+    my_app: 'RnBase',
+    platform: 'ios'
+  )
 end
